@@ -1,24 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react'
+import LoadingScreen from './modules/LoadingScreen';
+import Navbar from './modules/Navbar';
+import Hero from './modules/Hero';
+import About from './modules/About';
+import ProjectsData from './ProjectsData';
+import Card from './modules/Card';
+import './css/main.css';
+import { ReactComponent as FolderIcon } from './images/folder.svg'
+
+
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 3000);
+  }, [])
+
+  const projects = ProjectsData.map(project => (
+    <Card {...project} />
+  ))
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {loading === false ? (
+        <div className="App">
+          <Navbar />
+          <Hero />
+          
+          <section className='projects' id='projects'>
+            {/* <div className='projects__title'><FolderIcon /> Selected Projects</div> */}
+            {projects}
+          </section>
+
+          <section className='secondary-projects'>
+
+          </section>
+
+          <About />
+          
+        </div>
+      ) : (
+        <LoadingScreen />
+      )}
+    </>
   );
 }
 

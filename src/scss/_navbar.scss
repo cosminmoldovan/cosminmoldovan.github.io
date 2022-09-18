@@ -1,0 +1,32 @@
+.nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo{
+        color: $primary-color;
+        transform: scale(1.2);
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-left: 60px;
+        @media (max-width: 768px){
+            display: none;
+        }
+    }
+    &__link{
+        font-size: 16px;
+        font-weight: 500;
+        color: $primary-color;
+        opacity: 0.7;
+        &:hover{
+            opacity: 1;
+            transition: 0.4s cubic-bezier(0.25, 0.1, 0.25, 1)
+        }
+    }
+   
+}
