@@ -1,9 +1,11 @@
 .hero {
-    min-height: 500px;
-    max-height: 500px;
+    height: 550px;
     background-image: url('../images/hero-img.gif');
     background-repeat: no-repeat;
     background-position: top right;
+    @media (max-width: 768px){
+        padding-top: 60px;
+    }
     @media (max-width: 1200px) {
         background: none;
     }

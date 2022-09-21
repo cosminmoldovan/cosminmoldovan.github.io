@@ -15,7 +15,7 @@ function Hero() {
                     </div>
                     <div className='text-animation'>
                         <div>I'm a Web&nbsp;</div>
-                        <div><ReactRotatingText items={['Developer', 'Designer', 'Enthusiast', 'Creative']} typingInterval="80" deletingInterva="80" />
+                        <div><ReactRotatingText items={['Developer', 'Designer', 'Enthusiast', 'Creative']} typingInterval={80} />
                         </div>
                     </div>
                 </div>

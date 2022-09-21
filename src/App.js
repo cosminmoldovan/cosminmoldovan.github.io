@@ -6,7 +6,7 @@ import './css/main.css';
 
 function App() {
   const projects = ProjectsData.map(project => (
-    <Card {...project} />
+    <Card key={project.id} {...project} />
   ))
   return (
         <div className="App">

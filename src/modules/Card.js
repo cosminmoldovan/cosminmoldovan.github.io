@@ -5,7 +5,7 @@ function Card(props) {
         // flexDirection: props.flexDirection,
         background: props.background
     };
-    const topics = props.topics.map(topic => <div className='topic'>{topic}</div>)
+    const topics = props.topics.map(topic => <div key={topic} className='topic'>{topic}</div>)
     return (
         <div className="card" style={cardStyle}>
             <div className="card__thumbnail">
