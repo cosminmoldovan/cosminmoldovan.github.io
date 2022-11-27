@@ -11,6 +11,10 @@ function Navbar() {
         setMenuState(!menuState);
     }
     useEffect(() => {
+        let menuItems = document.querySelectorAll('.nav__item');
+        menuItems.forEach(item => item.addEventListener('click', () => setMenuState(false)))
+    }, [])
+    useEffect(() => {
         if (menuState) {
             menu.current.classList.add('visible');
             menuBtn.current.classList.add('is-active');
@@ -19,15 +23,6 @@ function Navbar() {
             menuBtn.current.classList.remove('is-active');
         }
     }, [menuState])
-    if (menuState) {
-        const menuItems = document.getElementsByClassName('nav__item');
-        for (let item of menuItems) {
-            item.addEventListener('click', () => {
-                setMenuState(false);
-            })
-        }
-    }
-
     return (
         <nav className="nav">
             <a href="#home" className="nav__logo">
@@ -41,10 +36,10 @@ function Navbar() {
                     <li className="nav__item"><a className="nav__link" href="https://www.linkedin.com/in/cosmin-moldovan/" target="_blank">LinkedIn</a></li>
                 </ul>
 
-                <div ref={menuBtn} class='menu-btn' onClick={toggleMenu}>
-                        <span className="line"></span>
-                        <span className="line"></span>
-                        <span className="line"></span>
+                <div ref={menuBtn} className='menu-btn' onClick={toggleMenu}>
+                    <span className="line"></span>
+                    <span className="line"></span>
+                    <span className="line"></span>
                 </div>
             </div>
         </nav>
