@@ -1,18 +1,6 @@
 const projectsData = [
     {
         id: 1,
-        title: "Responsive Landing Page for Mobile App",
-        logo: "remindme-logo.png",
-        topics: ['html5', 'css3', 'sass', 'bem-methodology', 'modern-web-design'],
-        description: "This is a responsive and modern landing page designed with a focus on the UI. Developed based on a Figma file using Sass features and BEM methodology.",
-        thumbnail: "remindme-thumbnail.png",
-        websiteLink:"https://cosminmoldovan.github.io/remindme/",
-        githubLink: "https://github.com/cosminmoldovan/remindme",
-        background: "linear-gradient(60deg, #B1CEFC 0%, #C8F3FA 100%)",
-
-    },
-    {
-        id: 2,
         title: "Movie Search App with ReactJS and TMDb API",
         logo: "trendflix-logo.png",
         topics: ['reactjs', 'tmdb-api', 'material-ui','react-router','responsive-design'],
@@ -21,6 +9,18 @@ const projectsData = [
         websiteLink:"https://cosminmoldovan.github.io/trendflix/",
         githubLink: "https://github.com/cosminmoldovan/trendflix",
         background: "linear-gradient(to right, #DED7F5 0%, #F2E4E4 100%)",
+    },
+    {
+        id: 2,
+        title: "Responsive Landing Page for Mobile App",
+        logo: "remindme-logo.png",
+        topics: ['html5', 'css3', 'sass', 'bem-methodology', 'modern-ui'],
+        description: "This is a responsive and modern landing page designed with a focus on the UI. Developed based on a Figma file using Sass features and BEM methodology.",
+        thumbnail: "remindme-thumbnail.png",
+        websiteLink:"https://cosminmoldovan.github.io/remindme/",
+        githubLink: "https://github.com/cosminmoldovan/remindme",
+        background: "linear-gradient(60deg, #B1CEFC 0%, #C8F3FA 100%)",
+
     },
     {
         id: 3,

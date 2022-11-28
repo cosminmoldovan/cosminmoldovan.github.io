@@ -80,8 +80,9 @@
             font-weight: 500;
             color: $primary-color;
             padding: 0 8px;
-            border: 1px solid rgba($primary-color, 0.5);
-            border-radius: 100px;
+            border: 1px solid rgba($gray-50, 0.5);
+            background-color: rgba($gray-50, 0.3);
+            border-radius: 4px;
         }
     }
     &__cta{

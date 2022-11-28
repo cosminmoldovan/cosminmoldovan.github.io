@@ -25,8 +25,8 @@ function Card(props) {
                     </div>
                 </div>
                 <div className="card__cta">
-                    <Button href={props.websiteLink} text="See Live" variant="outline" target="_blank"/>
-                    <Button href={props.githubLink} icon={<GithubIcon />} variant="outline" target="_blank" />
+                    {props.websiteLink && <Button href={props.websiteLink} text="See Live" variant="outline" target="_blank"/>}
+                    {props.githubLink && <Button href={props.githubLink} icon={<GithubIcon />} variant="outline" target="_blank" />}
                 </div>
             </div>
         </div>
