@@ -403,7 +403,7 @@ a {
   display: none;
 }
 .card__title {
-  font-size: 28px;
+  font-size: 24px;
   max-width: 20ch;
   font-weight: 600;
   margin-bottom: 16px;
@@ -416,8 +416,8 @@ a {
   }
 }
 .card__description {
-  font-size: 17px;
-  max-width: 50ch;
+  font-size: 16px;
+  max-width: 45ch;
   color: rgba(12, 12, 34, 0.8);
   font-weight: 400;
   line-height: 1.6;
@@ -498,9 +498,6 @@ a {
 
 .btn-lg {
   height: 60px;
-}
-.btn-lg .btn__text {
-  font-size: 18px;
 }
 
 .hero-btn .btn__icon {
