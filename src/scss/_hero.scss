@@ -38,12 +38,11 @@
         }
 
         @media (min-width:600px) {
-            font-size: calc(1.5rem + 3.5vw);
+            font-size: calc(1.5rem + 3vw);
             margin-bottom: 50px;
 
             .introduction {
-                font-size: calc(1.5rem + 3.5vw);
-                // opacity: 0.8;
+                font-size: calc(1.5rem + 3vw);
             }
 
             .word-list {
