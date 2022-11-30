@@ -11,7 +11,7 @@ function Hero() {
                 <div className="hero__text">
                     <div className="introduction">
                         <span>Hello, my</span>
-                        <span>name's Cosmin.</span>
+                        <span>name is Cosmin.</span>
                     </div>
                     <div className='text-animation'>
                         <div>I'm a Web&nbsp;</div>

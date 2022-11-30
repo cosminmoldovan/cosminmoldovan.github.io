@@ -262,11 +262,11 @@ a {
 }
 @media (min-width: 600px) {
   .hero__text {
-    font-size: calc(1.5rem + 3vw);
+    font-size: calc(1.5rem + 3.5vw);
     margin-bottom: 50px;
   }
   .hero__text .introduction {
-    font-size: calc(1.5rem + 3vw);
+    font-size: calc(1.5rem + 3.5vw);
   }
   .hero__text .word-list {
     display: inline;
