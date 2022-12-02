@@ -262,11 +262,11 @@ a {
 }
 @media (min-width: 600px) {
   .hero__text {
-    font-size: calc(1.5rem + 3.5vw);
+    font-size: clamp(48px, 1.5rem + 3.5vw, 100px);
     margin-bottom: 50px;
   }
   .hero__text .introduction {
-    font-size: calc(1.5rem + 3.5vw);
+    font-size: clamp(48px, 1.5rem + 3.5vw, 100px);
   }
   .hero__text .word-list {
     display: inline;
@@ -344,10 +344,11 @@ a {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
+  padding-bottom: 100px;
+  gap: 100px;
 }
 
 .card {
-  margin-bottom: 100px;
   display: flex;
   align-items: center;
   padding: 40px;
@@ -355,7 +356,6 @@ a {
   color: #0c0c22;
   border-radius: 16px;
   border: 1px solid rgba(12, 12, 34, 0.2);
-  background-color: rgba(12, 12, 34, 0.05);
 }
 @media (max-width: 1023px) {
   .card {
@@ -375,15 +375,15 @@ a {
 }
 .card__thumbnail {
   width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.card__thumbnail img {
+  width: 100%;
+  max-width: 500px;
 }
 @media (max-width: 1023px) {
   .card__thumbnail {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .card__thumbnail img {
-    max-width: 500px;
     width: 100%;
   }
 }
@@ -396,18 +396,13 @@ a {
     max-width: 500px;
   }
 }
-.card__logo {
-  position: absolute;
-  width: 100%;
-  display: none;
-}
 .card__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   max-width: 20ch;
   font-weight: 600;
-  margin-bottom: 16px;
   line-height: 1.4;
   color: rgba(12, 12, 34, 0.9);
+  margin-bottom: 16px;
 }
 @media (max-width: 768px) {
   .card__title {
@@ -415,31 +410,29 @@ a {
   }
 }
 .card__description {
-  font-size: 16px;
   max-width: 45ch;
+  font-size: 1rem;
   color: rgba(12, 12, 34, 0.8);
   font-weight: 400;
   line-height: 1.6;
+  margin-bottom: 16px;
 }
 .card__topics {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
-  margin-top: 16px;
+  margin-bottom: 32px;
 }
 .card__topics .topic {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
-  color: #0c0c22;
-  padding: 0 8px;
+  padding: 0 0.75em;
   border: 1px solid rgba(255, 255, 255, 0.5);
   background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
+  border-radius: 0.4em;
 }
 .card__cta {
-  margin-top: 32px;
   display: flex;
-  align-items: center;
   gap: 24px;
 }
 

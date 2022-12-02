@@ -38,11 +38,11 @@
         }
 
         @media (min-width:600px) {
-            font-size: calc(1.5rem + 3.5vw);
+            font-size: clamp(48px,calc(1.5rem + 3.5vw), 100px);
             margin-bottom: 50px;
 
             .introduction {
-                font-size: calc(1.5rem + 3.5vw);
+                font-size: clamp(48px,calc(1.5rem + 3.5vw), 100px);
             }
 
             .word-list {

@@ -12,20 +12,17 @@ function Card(props) {
                 <img src={`./thumbnails/${props.thumbnail}`} alt="Project Thumbnail" />
             </div>
             <div className="card__info">
-                <div className="card__logo">
-                    <img src={`./thumbnails/${props.logo}`} alt="Project logo" />
-                </div>
                 <div className="card__title">
                     {props.title}
                 </div>
                 <div className="card__description">
                     {props.description}
-                    <div className='card__topics'>
-                        {topics}
-                    </div>
+                </div>
+                <div className='card__topics'>
+                    {topics}
                 </div>
                 <div className="card__cta">
-                    {props.websiteLink && <Button href={props.websiteLink} text="See Live" variant="outline" target="_blank"/>}
+                    {props.websiteLink && <Button href={props.websiteLink} text="See Live" variant="outline" target="_blank" />}
                     {props.githubLink && <Button href={props.githubLink} icon={<GithubIcon />} variant="outline" target="_blank" />}
                 </div>
             </div>
