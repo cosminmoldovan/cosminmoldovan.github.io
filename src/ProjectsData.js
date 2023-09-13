@@ -1,7 +1,7 @@
 const projectsData = [
   {
     id: 1,
-    title: "Movie Search App with React and TMDB API",
+    title: "Movie Search App with React",
     logo: "trendflix-logo.png",
     topics: [
       "react",
@@ -15,11 +15,11 @@ const projectsData = [
     thumbnail: "trendflix-thumbnail.png",
     websiteLink: "https://cosminmoldovan.github.io/trendflix/",
     githubLink: "https://github.com/cosminmoldovan/trendflix",
-    background: "linear-gradient(to right, #DED7F5 0%, #F2E4E4 100%)",
+    background: "trendflix-bg.png",
   },
   {
     id: 2,
-    title: "Video Game Discovery App (React + TypeScript)",
+    title: "Video Game Discovery Web App",
     topics: [
       "react",
       "typescript",
@@ -30,15 +30,15 @@ const projectsData = [
       "dark-mode",
     ],
     description:
-      "GameHub is a video game discovery web application that helps you find new and exciting games to play. Thanks to data fetching and filtering functions, you can search for games by platform, genre and more.",
+      "GameHub is a video game discovery web application that helps you find new and exciting games to play. You can search for games by platform, genre and more.",
     thumbnail: "gamehub-thumbnail.png",
     websiteLink: "https://cm-gamehub.vercel.app/",
     githubLink: "https://github.com/cosminmoldovan/game-hub",
-    background: "linear-gradient(to right, #fff1eb 0%, #BAE3F7 100%)",
+    background: "gamehub-bg.png",
   },
   {
     id: 3,
-    title: "Responsive Landing Page for Mobile App",
+    title: "Responsive Landing Page",
     logo: "remindme-logo.png",
     topics: ["html5", "css3", "sass", "bem-methodology", "modern-ui"],
     description:
@@ -46,7 +46,7 @@ const projectsData = [
     thumbnail: "remindme-thumbnail.png",
     websiteLink: "https://cosminmoldovan.github.io/remindme/",
     githubLink: "https://github.com/cosminmoldovan/remindme",
-    background: "linear-gradient(60deg, #B1CEFC 0%, #C8F3FA 100%)",
+    background: "remindme-bg.png",
   },
   {
     id: 4,
@@ -65,7 +65,7 @@ const projectsData = [
     thumbnail: "kidocode-thumbnail.png",
     websiteLink: "https://cosminmoldovan.github.io/kidocode/",
     githubLink: "https://github.com/cosminmoldovan/kidocode",
-    background: "linear-gradient(-60deg, #AFFAD1 0%, #FAF7AF 100%)",
+    background: "kidocode-bg.png",
   },
 ];
 export default projectsData;

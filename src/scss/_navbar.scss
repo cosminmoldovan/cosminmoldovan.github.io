@@ -1,10 +1,17 @@
 .nav{
-    height: 80px;
+    height: 60px;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 100;
-    background-color: white;
+    width: 80%;
+    left: 10%;
+    top: 20px;
+    border-radius: 60px;
+
+    display: none;
+    background-color: rgba($color: #fff, $alpha: .5);
     @media (max-width: 768px){
       position: fixed;
       height: 60px;
@@ -14,6 +21,13 @@
     }
     &__logo{
         color: $primary-color;
+        font-family: 'Cabinet Grotesk', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        color: #27272A;
+        display: flex;
+        align-items: center;
+        gap: 6px;
     }
     &__list{
         list-style: none;
@@ -46,7 +60,7 @@
         font-size: 16px;
         font-weight: 500;
         color: $primary-color;
-        opacity: 0.7;
+        opacity: 0.8;
         @media (max-width: 768px){
             display: block;
             width: 50vw;

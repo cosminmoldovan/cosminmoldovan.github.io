@@ -1,73 +1,99 @@
 .hero {
-    height: 550px;
-    background-image: url('../images/hero-img.gif');
-    background-repeat: no-repeat;
-    background-position: top right;
-    @media (max-width: 768px){
-        padding-top: 60px;
+  width: 100%;
+  height: 100vh;
+  max-height: 700px;
+  padding-top: 60px;
+  &__image {
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    img {
+      width: 100px;
     }
-    @media (max-width: 1200px) {
-        background: none;
+    &__description {
+      font-family: "Cabinet Grotesk";
+      color: $primary-color;
+      font-size: 24px;
+      font-weight: 600;
+      text-align: center;
+      @media(max-width: 800px){
+        font-size: 20px;
+      }
     }
-    @media (min-width: 2000px) {
-        max-height: 700px;
+  }
+  &__social { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+    // @media (min-width: 800px){
+    // position: absolute;
+    // top: 50px;
+    // right: 50px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // gap: 20px;
+   
+    // }
+    &__btn {
+      color: rgba($color: #fff, $alpha: 0.8);
+      padding: 8px;
+      border-radius: 8px;
+      transition: all 0.2s ease-in;
     }
-    &__text {
-        font-size: 48px;
-        font-weight: 500;
-        letter-spacing: -1px;
-        padding-top: 30px;
-        margin-bottom: 120px;
-        line-height: 1.4;
-        color: $primary-color;
-        .introduction {
-            display: flex;
-            flex-direction: column;
-            font-size: 24px;
-            margin-bottom: 8px;
-            opacity: 0.8;
-        }
-        .text-animation{
-            display: flex;
-            @media (max-width:600px){
-                flex-direction: column;
-                gap: 0;
-
-            }
-
-        }
-
-        @media (min-width:600px) {
-            font-size: clamp(48px,calc(1.5rem + 3.5vw), 100px);
-            margin-bottom: 50px;
-
-            .introduction {
-                font-size: clamp(48px,calc(1.5rem + 3.5vw), 100px);
-            }
-
-            .word-list {
-                display: inline;
-            }
-        }
+    &__btn:hover {
+      color: rgba($color: #fff, $alpha: 1);
+      transform: scale(1.1);
     }
+  }
 
-    &__cta {
-        display: flex;
-        gap: 40px;
-        @media (max-width: 600px){
-            flex-direction: column;
-            align-items: center;
-            gap: 32px;
-            a{
-                width: 80%;
-            }
-        }
-        @media (max-width: 424px){
-            a{
-                width: 100%;
-            }
-        }
+  &__text {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    .title {
+      font-family: "Cabinet Grotesk";
+      color: $primary-color;
+      font-size: 44px;
+      font-weight: 800;
+      line-height: normal;
+      max-width: 22ch;
+      margin-bottom: 20px;
+      text-align: center;
+       @media(max-width: 800px){
+        font-size: 36px;
+      }
+      @media(max-width: 700px){
+        font-size: 32px;
+      }
     }
+  }
 
-
+  &__cta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      a {
+        width: 80%;
+      }
+    }
+    @media (max-width: 424px) {
+      a {
+        width: 100%;
+      }
+    }
+  }
 }
