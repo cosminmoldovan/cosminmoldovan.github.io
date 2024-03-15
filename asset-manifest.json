@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.648ec1bc.css",
-    "main.js": "/static/js/main.1a9d8d30.js",
+    "main.css": "/static/css/main.bab99abb.css",
+    "main.js": "/static/js/main.3a98ba3c.js",
     "static/media/bg.png": "/static/media/bg.061e9dbce7c636e1f999.png",
     "static/media/cosmin-moldovan.png": "/static/media/cosmin-moldovan.2d26aaa521e3682c0831.png",
     "index.html": "/index.html",
@@ -9,14 +9,13 @@
     "static/media/github.svg": "/static/media/github.5e7430d6e293bb002753a6c98bd8172a.svg",
     "static/media/githubbtn.svg": "/static/media/githubbtn.218a1db5ac18613e535d0dcf280e5ccc.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.64d0d084bd9caaa29da37c94552de404.svg",
-    "static/media/twitter.svg": "/static/media/twitter.d96bec7f89e6c389bc755f0d1766cdea.svg",
     "static/media/resume.svg": "/static/media/resume.65a20243fdd7ee7eee1f99243f89b21a.svg",
     "static/media/email.svg": "/static/media/email.8b8e38d28c78eb16292390e87a50a4e5.svg",
-    "main.648ec1bc.css.map": "/static/css/main.648ec1bc.css.map",
-    "main.1a9d8d30.js.map": "/static/js/main.1a9d8d30.js.map"
+    "main.bab99abb.css.map": "/static/css/main.bab99abb.css.map",
+    "main.3a98ba3c.js.map": "/static/js/main.3a98ba3c.js.map"
   },
   "entrypoints": [
-    "static/css/main.648ec1bc.css",
-    "static/js/main.1a9d8d30.js"
+    "static/css/main.bab99abb.css",
+    "static/js/main.3a98ba3c.js"
   ]
 }
