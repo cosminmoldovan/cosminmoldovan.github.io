@@ -4,14 +4,13 @@ import profilePicture from "../images/cosmin-moldovan.png";
 import { ReactComponent as LinkedInIcon } from "../images/linkedin.svg";
 import { ReactComponent as GitHubIcon } from "../images/github.svg";
 import { ReactComponent as EmailIcon } from "../images/email.svg";
-import { ReactComponent as TwitterIcon } from "../images/twitter.svg";
 import Button from "./Button";
 
 function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero__image">
-        <img alt="picture with Cosmin Moldovan" src={profilePicture} />
+        <img alt="Cosmin Moldovan" src={profilePicture} style={{borderRadius: "60px`"}}/>
         <div className="hero__image__description">Cosmin Moldovan</div>
       </div>
       <div className="hero__social">
