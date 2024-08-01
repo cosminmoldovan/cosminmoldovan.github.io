@@ -1,6 +1,6 @@
 import { ReactComponent as RocketIcon } from "../images/rocket.svg";
 import { ReactComponent as ResumeIcon } from "../images/resume.svg";
-import profilePicture from "../images/cosmin-moldovan.png";
+import profilePicture from "../images/cm.png";
 import { ReactComponent as LinkedInIcon } from "../images/linkedin.svg";
 import { ReactComponent as GitHubIcon } from "../images/github.svg";
 import { ReactComponent as EmailIcon } from "../images/email.svg";
@@ -48,7 +48,7 @@ function Hero() {
           classList="hero-btn"
         />
         <Button
-          href="./Cosmin_Moldovan_Resume.pdf"
+          href="./Cosmin-Moldovan-Resume.pdf"
           target="_blank"
           icon={<ResumeIcon />}
           text="Resume"
